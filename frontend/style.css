@@ -67,9 +67,52 @@ nav .logo small {
 }
 
 .apresentacao {
+    align-items: center;
+    display: grid;
+    gap: 48px;
+    grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
     margin: 0;
-    max-width: 1200px;
-    padding: 100px 25px 30px;
+    padding: 60px 0 30px 20px;
+}
+
+.apresentacao_conteudo {
+    min-width: 0;
+}
+
+.painel_categorias {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: calc(100vh - 98px);
+    margin-top: -60px;
+    width: 100%;
+}
+
+.categoria_icone {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.categoria_icone svg {
+    height: clamp(36px, 4vw, 54px);
+    stroke: #ffffff;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+    stroke-width: 3;
+    width: clamp(36px, 4vw, 54px);
+}
+
+.categoria_azul {
+    background: linear-gradient(135deg, #31539a, #24458b);
+}
+
+.categoria_laranja {
+    background: linear-gradient(135deg, #ee8424, #f07820);
+}
+
+.categoria_laranja_escuro {
+    background: linear-gradient(135deg, #d46a16, #c95609);
 }
 
 .localizacao {
@@ -106,14 +149,26 @@ nav .logo small {
     }
 
     .apresentacao {
-        margin: 0;
-        max-width: 1200px;
-         padding: 100px 20px 30px;
+        padding: 60px 20px 30px;
 
     }
 
     .titulo_principal {
         font-size: clamp(2.5rem, 7.3vw, 3rem);
+    }
+}
+
+@media (max-width: 800px) {
+    .apresentacao {
+        grid-template-columns: 1fr;
+        padding-right: 20px;
+    }
+
+    .painel_categorias {
+        aspect-ratio: 1.55;
+        height: auto;
+        margin: 0 auto;
+        max-width: 550px;
     }
 }
 
@@ -138,10 +193,13 @@ nav .logo small {
 
 .botao1 {
     background-color: #f07820;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .botao1:hover {
     background-color: #e0731c;
+    box-shadow: 0 8px 16px rgba(240, 120, 32, 0.45);
+    transform: translateY(-4px);
 }
 
 .botao2 {
@@ -152,4 +210,38 @@ nav .logo small {
 .botao2:hover {
     background-color: #f07820;
     color: #ffffff;
+}
+
+
+.container_dados {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 60px;
+    font-family: 'Inter', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.dados {
+    border-left: 2px solid #f07820;
+    padding-left: 16px;
+}
+
+.dados strong {
+    display: block;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.dados_descricao {
+    max-width: 400px;
+    color: #e0e5f1;
+    font-size: 0.95rem;
+}
+
+.secao_escura {
+    background-color: #0f1216;
+    min-height: 100vh;
 }
