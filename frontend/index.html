@@ -1,51 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Ferrarezi Utilidades</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- NAVEGAÇÃO -->
     <nav>
         <a class="logo" href="#" aria-label="Ferrarezi Utilidades - início">
-            <img src="../imagens/logo_ferrarezi.jpg" alt="">
+            <img src="../imagens/logo_ferrarezi.jpg" alt="Logo Ferrarezi Utilidades">
             <span>
                 <strong>FERRAREZI</strong>
                 <small>UTILIDADES</small>
             </span>
         </a>
+
         <div class="links_navegacao">
             <a href="#produtos">Produtos</a>
-            <a href="#sobre-nos">Sobre Nós</a> 
+            <a href="#sobre-nos">Sobre Nós</a>
             <a href="#setor-em-numeros">Setor em Números</a>
-            <a href="#localizacao">Localização</a>  
-            <a href="login.html" class="btn_lojista">Área do Lojista</a> 
+            <a href="#localizacao">Localização</a>
+            <a href="login.html" class="btn_lojista">Área do Lojista</a>
         </div>
-
-
     </nav>
 
+    <!-- APRESENTAÇÃO -->
     <main class="apresentacao">
         <div class="apresentacao_conteudo">
+
             <p class="localizacao">● Assis, SP — Parque Colinas</p>
 
             <h1 class="titulo_principal">
-                Tudo para a sua <span class="destaque_laranja">obra e<br> reforma</span>, numa loja só.
+                Tudo para a sua
+                <span class="destaque_laranja">
+                    obra e<br> reforma
+                </span>,
+                numa loja só.
             </h1>
 
             <p class="descricao">
-                Hidráulica, elétrica, ferramentas, acabamento e ferragens. A Ferrarezi Utilidades
-                atende o profissional e o morador de Assis, com estoque de prateleira
-                cheia e atendimento de quem entende do assunto.
+                Hidráulica, elétrica, ferramentas, acabamento e ferragens.
+                A Ferrarezi Utilidades atende o profissional e o morador
+                de Assis, com estoque de prateleira cheia e atendimento
+                de quem entende do assunto.
             </p>
 
             <div class="container_botoes">
-                <p class="botao botao1">Ver Categorias de Produtos</p>
-                <p class="botao botao2">Como Chegar</p>
+                <a class="botao botao1" href="#produtos">
+                    Ver Categorias de Produtos
+                </a>
+
+                <a class="botao botao2" href="#localizacao">
+                    Como Chegar
+                </a>
             </div>
-    
+
             <div class="container_dados">
                 <div class="dados">
                     <strong>5</strong>
@@ -62,111 +77,348 @@
                     <small class="dados_descricao">dias de funcionamento</small>
                 </div>
             </div>
+
         </div>
 
         <div class="painel_categorias" aria-hidden="true">
+
             <div class="categoria_icone categoria_azul">
                 <svg viewBox="0 0 48 48" fill="none">
-                    <path d="M24 5C19 13 12 20 12 29a12 12 0 0 0 24 0C36 20 29 13 24 5Z" />
+                    <path d="M24 5C19 13 12 20 12 29a12 12 0 0 0 24 0C36 20 29 13 24 5Z"/>
                 </svg>
             </div>
+
             <div class="categoria_icone categoria_laranja">
                 <svg viewBox="0 0 48 48" fill="none">
-                    <path d="M5 22 24 7l19 15M10 20v22h28V20" />
+                    <path d="M5 22 24 7l19 15M10 20v22h28V20"/>
                 </svg>
             </div>
+
             <div class="categoria_icone categoria_laranja_escuro">
                 <svg viewBox="0 0 48 48" fill="none">
-                    <path d="m8 40 3-12L33 6l10 10-22 22-13 2Z" />
-                    <path d="m28 11 10 10M37 5l6 6" />
+                    <path d="m8 40 3-12L33 6l10 10-22 22-13 2Z"/>
+                    <path d="m28 11 10 10M37 5l6 6"/>
                 </svg>
             </div>
+
             <div class="categoria_icone categoria_azul">
                 <svg viewBox="0 0 48 48" fill="none">
-                    <path d="M24 6a12 12 0 0 0-7 22c2 1 3 4 3 6h8c0-2 1-5 3-6a12 12 0 0 0-7-22Z" />
-                    <path d="M20 39h8M21 44h6" />
+                    <path d="M24 6a12 12 0 0 0-7 22c2 1 3 4 3 6h8c0-2 1-5 3-6a12 12 0 0 0-7-22Z"/>
+                    <path d="M20 39h8M21 44h6"/>
                 </svg>
             </div>
-        </div>
 
-        
+        </div>
     </main>
-    <section id="produtos">
+
+    <!-- ===================================
+         PRODUTOS - CATEGORIAS DA FERRAREZI
+         =================================== -->
+    <section id="produtos" class="secao_produtos">
+        <div class="produtos_container">
+
+            <div class="produtos_cabecalho">
+                <span class="produtos_etiqueta">NOSSOS PRODUTOS</span>
+
+                <h2>
+                    O que você encontra
+                    <span>na Ferrarezi.</span>
+                </h2>
+
+                <p>
+                    Materiais e utilidades para construção, instalação,
+                    manutenção e reforma.
+                </p>
+            </div>
+
+            <div class="categorias_grid">
+
+                <!-- CATEGORIA 01 -->
+                <article class="categoria_card">
+                    <div class="categoria_foto">
+                        <span class="categoria_numero">01</span>
+                        <div class="categoria_foto_placeholder">HIDRÁULICA</div>
+                    </div>
+
+                    <div class="categoria_conteudo">
+                        <span class="categoria_tipo">MATERIAIS HIDRÁULICOS</span>
+                        <h3>Conexões hidráulicas</h3>
+                        <p>
+                            Joelhos, luvas, tês, adaptadores e conexões
+                            para diferentes instalações.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- CATEGORIA 02 -->
+                <article class="categoria_card">
+                    <div class="categoria_foto">
+                        <span class="categoria_numero">02</span>
+                        <div class="categoria_foto_placeholder">TUBOS E CONEXÕES</div>
+                    </div>
+
+                    <div class="categoria_conteudo">
+                        <span class="categoria_tipo">MATERIAIS HIDRÁULICOS</span>
+                        <h3>Tubos e conexões</h3>
+                        <p>
+                            Materiais para instalações e reparos
+                            em redes hidráulicas.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- CATEGORIA 03 -->
+                <article class="categoria_card">
+                    <div class="categoria_foto">
+                        <span class="categoria_numero">03</span>
+                        <div class="categoria_foto_placeholder">MANGUEIRAS</div>
+                    </div>
+
+                    <div class="categoria_conteudo">
+                        <span class="categoria_tipo">MATERIAIS HIDRÁULICOS</span>
+                        <h3>Kits e mangueiras</h3>
+                        <p>
+                            Mangueiras e acessórios para instalações,
+                            manutenção e uso doméstico.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- CATEGORIA 04 -->
+                <article class="categoria_card">
+                    <div class="categoria_foto">
+                        <span class="categoria_numero">04</span>
+                        <div class="categoria_foto_placeholder">FERRAMENTAS</div>
+                    </div>
+
+                    <div class="categoria_conteudo">
+                        <span class="categoria_tipo">FERRAMENTAS</span>
+                        <h3>Ferramentas manuais</h3>
+                        <p>
+                            Chaves, alicates e ferramentas para
+                            serviços, reparos e manutenção.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- CATEGORIA 05 -->
+                <article class="categoria_card">
+                    <div class="categoria_foto">
+                        <span class="categoria_numero">05</span>
+                        <div class="categoria_foto_placeholder">ELÉTRICA</div>
+                    </div>
+
+                    <div class="categoria_conteudo">
+                        <span class="categoria_tipo">MATERIAIS ELÉTRICOS</span>
+                        <h3>Materiais elétricos</h3>
+                        <p>
+                            Tomadas, interruptores, cabos e acessórios
+                            para instalações elétricas.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- CATEGORIA 06 -->
+                <article class="categoria_card">
+                    <div class="categoria_foto">
+                        <span class="categoria_numero">06</span>
+                        <div class="categoria_foto_placeholder">ACABAMENTO</div>
+                    </div>
+
+                    <div class="categoria_conteudo">
+                        <span class="categoria_tipo">ACABAMENTO E FERRAGENS</span>
+                        <h3>Ferragens e acabamento</h3>
+                        <p>
+                            Itens de fixação, selantes, tintas
+                            e acessórios para os detalhes finais da obra.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
     </section>
-    <section id="sobre-nos">
+
+    <!-- ===================================
+         SOBRE NÓS - UMA LOJA DE BAIRRO
+         =================================== -->
+    <section id="sobre-nos" class="secao_sobre">
+        <div class="sobre_container">
+
+            <div class="sobre_visual">
+                <span class="sobre_selo">FERRAREZI UTILIDADES</span>
+
+                <div class="sobre_visual_conteudo">
+                    <img
+    src="../imagens/imagem.png"
+    alt="Logo da Ferrarezi Utilidades"
+    class="sobre_visual_logo"
+>
+                    <p>Materiais, utilidades e atendimento em Assis.</p>
+                </div>
+            </div>
+
+            <div class="sobre_conteudo">
+                <span class="sobre_etiqueta">QUEM SOMOS</span>
+
+                <h2>
+                    Uma loja de bairro,
+                    <span>perto de você.</span>
+                </h2>
+
+                <p>
+                    A Ferrarezi Utilidades é uma loja localizada
+                    no bairro Parque Colinas, em Assis, São Paulo.
+                    Trabalha com materiais elétricos, hidráulicos,
+                    ferramentas, ferragens e utilidades em geral.
+                </p>
+
+                <p>
+                    Nossa proposta é facilitar o dia a dia de quem
+                    precisa de materiais para construir, reformar
+                    ou realizar pequenos reparos, reunindo diferentes
+                    categorias em um só lugar.
+                </p>
+
+                <div class="sobre_destaques">
+                    <div class="sobre_destaque">
+                        <strong>01</strong>
+                        <span>Variedade de materiais</span>
+                    </div>
+
+                    <div class="sobre_destaque">
+                        <strong>02</strong>
+                        <span>Atendimento próximo</span>
+                    </div>
+
+                    <div class="sobre_destaque">
+                        <strong>03</strong>
+                        <span>Localização em Assis</span>
+                    </div>
+                </div>
+
+                <a class="sobre_botao" href="#localizacao">
+                    Conheça nossa localização
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SETOR EM NÚMEROS - ÁREA DOS COLEGAS -->
     <section id="setor-em-numeros">
     </section>
 
+    <!-- LOCALIZAÇÃO -->
     <section id="localizacao" class="secao_escura">
-  <div class="conteudo_localizacao">
-    <div class="cabecalho_localizacao">
-      <span class="tag_onde_estamos">Onde estamos</span>
-      <h2 class="titulo_localizacao">Venha Conhecer a nossa loja</h2> 
-      <p class="descricao_localizacao">
-        Bairro Parque Colinas, em Assis-SP — fácil de chegar de carro ou moto.
-      </p>
-    </div>
+        <div class="conteudo_localizacao">
 
-    <a href="https://maps.google.com/?q=Rua+Palmira+Arruda+Borrego,+57,+Parque+Colinas,+Assis+-+SP" 
-   target="_blank" 
-   class="btn_abrir_maps">
-   Abrir rota no Google Maps
-</a>
-    
-    <div class="grid_localizacao">
-      <div class="card_mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.123456789!2d-50.412345!3d-22.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM5JzE1LjYiUyA1MMKwMjQnNDQuNCJX!5e0!3m2!1wpt-BR!2sbr!4v1234567890"
-          width="100%"
-          height="260"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy">
-        </iframe>
-      </div>
+            <div class="cabecalho_localizacao">
+                <span class="tag_onde_estamos">Onde estamos</span>
 
-      <div class="card_info">
-        <div class="item_info">
-          <div class="icone_info">
-          <img src="../imagens/icons8-localização-50.png" alt="Ícone de localização" width="24" height="24"> 
-          </div>
-            <div class="texto_info">
-            <strong>Endereço</strong>
-            <p>Rua Palmira Arruda Borrego, 57 — Parque Colinas, Assis - SP</p>
-          </div>
+                <h2 class="titulo_localizacao">
+                    Venha Conhecer a nossa loja
+                </h2>
+
+                <p class="descricao_localizacao">
+                    Bairro Parque Colinas, em Assis-SP — fácil
+                    de chegar de carro ou moto.
+                </p>
+            </div>
+
+            <a
+                href="https://maps.google.com/?q=Rua+Palmira+Arruda+Borrego,+57,+Parque+Colinas,+Assis+-+SP"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn_abrir_maps"
+            >
+                Abrir rota no Google Maps
+            </a>
+
+            <div class="grid_localizacao">
+
+                <div class="card_mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.123456789!2d-50.412345!3d-22.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM5JzE1LjYiUyA1MMKwMjQnNDQuNCJX!5e0!3m2!1wpt-BR!2sbr!4v1234567890"
+                        width="100%"
+                        height="260"
+                        style="border:0;"
+                        allowfullscreen
+                        loading="lazy"
+                        title="Localização da Ferrarezi Utilidades"
+                    ></iframe>
+                </div>
+
+                <div class="card_info">
+
+                    <div class="item_info">
+                        <div class="icone_info">
+                            <img src="../imagens/icons8-localização-50.png"
+                                 alt="Ícone de localização"
+                                 width="24" height="24">
+                        </div>
+
+                        <div class="texto_info">
+                            <strong>Endereço</strong>
+                            <p>
+                                Rua Palmira Arruda Borrego, 57 —
+                                Parque Colinas, Assis - SP
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item_info">
+                        <div class="icone_info">
+                            <img src="../imagens/icons8-time-50.png"
+                                 alt="Ícone de horário"
+                                 width="24" height="24">
+                        </div>
+
+                        <div class="texto_info">
+                            <strong>Horário de funcionamento</strong>
+                            <p>
+                                Segunda a sexta, 8h às 18h ·
+                                Sábado, 8h às 12h
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item_info">
+                        <div class="icone_info">
+                            <img src="../imagens/icons8-contato-50.png"
+                                 alt="Ícone de telefone"
+                                 width="24" height="24">
+                        </div>
+
+                        <div class="texto_info">
+                            <strong>Contato</strong>
+                            <p>(18) 000000000</p>
+                        </div>
+                    </div>
+
+                    <div class="item_info">
+                        <div class="icone_info">
+                            <img src="../imagens/icons8-nova-mensagem-48.png"
+                                 alt="Ícone de e-mail"
+                                 width="24" height="24">
+                        </div>
+
+                        <div class="texto_info">
+                            <strong>E-mail</strong>
+                            <p>ferrareziutilidades@gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="item_info">
-          <div class="icone_info">
-            <img src="../imagens/icons8-time-50.png" alt="Ícone de horário" width="24" height="24">
-          </div>
-          <div class="texto_info">
-            <strong>Horário de funcionamento</strong>
-            <p>Segunda a sexta, 8h às 18h · Sábado, 8h às 12h</p>
-          </div>
-        </div>
+    <script src="script.js" defer></script>
 
-        <div class="item_info"> 
-          <div class="icone_info">
-            <img src="../imagens/icons8-contato-50.png" alt="Ícone de telefone" width="24" height="24">
-          </div>
-          <div class="texto_info">
-            <strong>Contato</strong> 
-            <p>(18) 000000000</p>
-          </div>
-        </div>
+</body>
+</html>
 
-        <div class="item_info">
-          <div class="icone_info">
-            <img src="../imagens/icons8-nova-mensagem-48.png" alt="Ícone de e-mail" width="24" height="24"> 
-          </div>
-          <div class="texto_info">
-            <strong>E-mail</strong>
-            <p>ferrareziutilidades@gmail.com 
 
-        
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
