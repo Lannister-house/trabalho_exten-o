@@ -195,6 +195,7 @@ nav .logo small {
 
 .botao {
     display: inline-block;
+    text-decoration: none; 
     padding: 10px 20px;
     color: #ffffff;
     border-radius: 6px;
