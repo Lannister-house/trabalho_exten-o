@@ -1,14 +1,9 @@
 
-/* ==========================================
-   FERRAREZI UTILIDADES
-   JAVASCRIPT PRINCIPAL
-   ========================================== */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ==========================================
-       1. ROLAGEM SUAVE ENTRE AS SEÇÕES
-       ========================================== */
+    
 
     const linksInternos = document.querySelectorAll(
         'a[href^="#"]'
@@ -20,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const destino = link.getAttribute("href");
 
-            // Ignora links que apontam apenas para "#"
+            
             if (!destino || destino === "#") {
                 return;
             }
@@ -29,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 destino.substring(1)
             );
 
-            // Mantém o comportamento normal se não existir destino
+            
             if (!secaoDestino) {
                 return;
             }
@@ -45,13 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    /* ==========================================
-       2. ANIMAÇÃO DOS CARTÕES DE CATEGORIAS
-       ========================================== */
+    
 
     const cartoes = document.querySelectorAll(".categoria_card");
-
-    // Respeita a preferência de movimento reduzido
+    
     const movimentoReduzido = window.matchMedia(
         "(prefers-reduced-motion: reduce)"
     ).matches;

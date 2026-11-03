@@ -1,9 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@700&display=swap');
 
-/* ==========================================
-   CONFIGURAÇÕES GERAIS
-========================================== */
+
 
 * {
     box-sizing: border-box;
@@ -30,9 +28,7 @@ a {
     text-decoration: none;
 }
 
-/* ==========================================
-   NAVEGAÇÃO
-========================================== */
+
 
 nav {
     align-items: center;
@@ -110,9 +106,7 @@ nav .logo small {
     transform: translateY(-2px);
 }
 
-/* ==========================================
-   APRESENTAÇÃO
-========================================== */
+
 
 .apresentacao {
     align-items: center;
@@ -257,9 +251,7 @@ nav .logo small {
     font-size: 0.95rem;
 }
 
-/* ==========================================
-   PRODUTOS - CATEGORIAS
-========================================== */
+
 
 .secao_produtos {
     background: #0d1b34;
@@ -310,7 +302,7 @@ nav .logo small {
     margin: 0 auto;
 }
 
-/* GRID DAS CATEGORIAS */
+
 
 .categorias_grid {
     display: grid;
@@ -318,7 +310,7 @@ nav .logo small {
     gap: 25px;
 }
 
-/* CARTÕES */
+
 
 .categoria_card {
     background: #142746;
@@ -410,9 +402,7 @@ nav .logo small {
     line-height: 1.75;
 }
 
-/* ==========================================
-   SOBRE NÓS - UMA LOJA DE BAIRRO
-========================================== */
+
 
 .secao_sobre {
     background: #f5f7fb;
@@ -580,9 +570,7 @@ nav .logo small {
     transform: translateY(-3px);
 }
 
-/* ==========================================
-   LOCALIZAÇÃO
-========================================== */
+
 
 .secao_escura {
     background-color: #0b1528;
@@ -703,7 +691,7 @@ nav .logo small {
     font-size: 0.88rem;
 }
 
-/* Estilos auxiliares preservados */
+
 
 .linha_divisoria {
     height: 1px;
@@ -716,9 +704,7 @@ nav .logo small {
     font-size: 0.75rem;
 }
 
-/* ==========================================
-   PÁGINA DE LOGIN
-========================================== */
+
 
 .corpo_login {
     background-color: #0b1528;
@@ -813,9 +799,7 @@ nav .logo small {
     color: #ffffff;
 }
 
-/* ==========================================
-   RESPONSIVIDADE
-========================================== */
+
 
 @media (max-width: 1100px) {
     .categorias_grid {
@@ -915,7 +899,7 @@ nav .logo small {
 
 
 
-/* ANIMAÇÃO DE ENTRADA DAS CATEGORIAS */
+
 
 @media (prefers-reduced-motion: no-preference) {
     .categoria_card.categoria_animada {
@@ -939,7 +923,7 @@ nav .logo small {
 }
 
 
-/* LOGO DA FERRAREZI NA SEÇÃO QUEM SOMOS */
+
 
 .sobre_visual_logo {
     display: block;
@@ -961,4 +945,94 @@ nav .logo small {
 .sobre_visual_logo:hover {
     transform: scale(1.05);
 }
+
+
+.secao-numeros-integrada {
+    width: 100%;
+    background-color: #0b1d3a;
+    padding: 60px 20px;
+}
+
+.container-numeros {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.bloco-info {
+    flex: 2;
+    min-width: 300px;
+    color: #ffffff;
+}
+
+.bloco-info h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.bloco-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+.btn-dados {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-dados:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bloco-restrito {
+    flex: 1;
+    min-width: 250px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    color: #ffffff;
+}
+
+.bloco-restrito .icone-cadeado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.bloco-restrito h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.bloco-restrito p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #dcdcdc;
+    margin-bottom: 15px;
+}
+
+.bloco-restrito small {
+    font-size: 11px;
+    color: #b0b0b0;
+}
+
 
